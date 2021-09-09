@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="admin.css">
+    <script type="text/javascript">
+    function changeColor(color){
+        
+        document.bgColor=color; //دا بيغير لون الخلفية 
+        // document.fgColor=color; //دا بيغير لون الخط 
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>admin</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+        <!-- <i class='bx bx-shield-quarter icon'></i> -->
+        <img src="cinema.png" class="cin icon">
+        <div class="logo_name">HOMIES</div>
+        <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search...">
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="../admin home/index.html">
+            <i class='bx bx-home'></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="../admin movie/index.html">
+            <i class='bx bx-camera-movie'></i>
+            <span class="links_name">Movies</span>
+          </a>
+          <span class="tooltip">Movies</span>
+        </li>
+        <li>
+          <a href="../admin series/series.html">
+            <i class='bx bx-movie-play'></i>
+            <span class="links_name">Series</span>
+          </a>
+          <span class="tooltip">Series</span>
+        </li>
+        <li>
+          <a href="../admin page/index.html">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+     
+        <li>
+            <a href="../index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Log Out</span>
+            </a>
+            <span class="tooltip">Log Out</span>
+        </li>
+        </ul>
+        </div>
+        
+     <div class="about-section">
+        <h1 id="font">Admin Page</h1>
+        <p></p>
+        <p id="font">you are admin now , you can control on website.</p>
+    </div> 
+    <!-- اللي معموله كومنت دا كلام بيظهر عادي شوفي انتي هتلغيها ولا تشغليه -->
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="icons8-film-reel-80.png" alt="">
+                <h3 id="font">Add Film</h3>
+                <p id="font">Click to add a new film</p>
+            </div>
+        </div>
+        <br>
+        <div class="column">
+            <div class="card">
+                <img src="icons8-film-80-2.png" alt="">
+                <h3 id="font">Add series</h3>
+                <p id="font">Click to add a new series</p>
+            </div>
+        </div>
+        <br>
+        <div class="column">
+            <div class="card">
+                <img src="icons8-ios-photos-80.png" alt="">
+                <h3 id="font">Colors</h3>
+                <p id="font">Click to change colors</p>
+                <button class="button button1" id="green" onclick="clickGreen()">Green</button>
+                <button class="button button2" id="blue" onclick="clickBlue()">Blue</button>
+                <button class="button button3" id="red" onclick="clickRed()">Red</button>
+                <button class="button button4" id="gray" onclick="clickGray()">Gray</button>
+                
+            </div>
+        </div>
+        <br>
+         <div class="column">
+            <div class="card">
+                <img src="icons8-abc-80-2.png" alt="">
+                <h3 id="font">Fonts</h3>
+                <p id="font">Click to change font colors</p>
+                <button class="button button1" id="btn1" onclick="changeCFont()">Green</button>
+                <button class="button button2"id="btn2" onclick="changeCFont()">Blue</button>
+                <button class="button button3" id="btn3" onclick="changeCFont()">Red</button>
+                <button class="button button4" id="btn4" onclick="changeCFont()">Gray</button>
+                <p id="font">Click to change font colors</p>
+                <button class="font-style" onclick="italic()">Italic</button>
+                <button class="font-style" onclick="bold()">Bold</button>
+            </div>
+        </div>
+        <br>
+        <div class="column">
+            <div class="card">
+                <img src="icons8-users-80.png" alt="">
+                <h3 id="font">Users</h3>
+                <p id="font">Click to show Users </p>
+            </div>
+        </div>
+    </div>
+    <script>   if(localStorage.getItem("body")==null){
+        document.querySelector("body").style.backgroundImage;
+        }
+        else{
+        document.querySelector("body").style.backgroundImage=("none"); 
+        changeColor(localStorage.getItem("body"));}
+        function changeColor(colorl){
+            
+        document.querySelector("body").style.backgroundColor=colorl;
+        }
+        console.log("yasmine");</script>
+        <script type="text/javascript">
+          function changeColor(color){
+              
+              document.bgColor=color; //دا بيغير لون الخلفية 
+              // document.fgColor=color; //دا بيغير لون الخط 
+          }
+          function changeCFont(color){
+              document.fgColor = color;
+          }
+          function italic(){
+              document.body.style.fontStyle = "italic";
+          }
+          function bold() {
+              document.body.style.fontWeight= "bold";
+          }
+          </script>
+<script src="script.js"></script>
+<script src="font.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

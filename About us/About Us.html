@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons8-about-48.png" type="image/png" sizes="18x18">
+    <link rel="stylesheet" href="About .css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+        <!-- <i class='bx bx-shield-quarter icon'></i> -->
+        <img src="cinema.png" class="cin icon">
+        <div class="logo_name">HOMIES</div>
+        <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search...">
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="../home/index.html">
+            <i class='bx bx-home'></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="../movies/index.html">
+            <i class='bx bx-camera-movie'></i>
+            <span class="links_name">Movies</span>
+          </a>
+          <span class="tooltip">Movies</span>
+        </li>
+        <li>
+          <a href="../series/index.html">
+            <i class='bx bx-movie-play'></i>
+            <span class="links_name">Series</span>
+          </a>
+          <span class="tooltip">Series</span>
+        </li>
+        <li>
+          <a href="../contact form/index.html">
+            <i class='bx bxs-contact'></i>
+            <span class="links_name">Contact Us</span>
+          </a>
+          <span class="tooltip">Contact Us</span>
+        </li>
+        <li>
+          <a href="../About us/About Us.html">
+            <i class='bx bx-info-circle'></i>
+            <span class="links_name">About Us</span>
+          </a>
+          <span class="tooltip">About Us</span>
+        </li>
+        <li>
+            <a href="../index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Log Out</span>
+            </a>
+            <span class="tooltip">Log Out</span>
+        </li>
+        </ul>
+        </div>
+        
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="reda.jpg" >
+                <h3>Ahmed Reda</h3>
+                <hr class="h">
+                <p>20201700040@cis.asu.edu.eg</p>
+                <br>
+                <p>Designed slide image and navigation slide bar</p>
+                
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="mhmd.jpg">
+                <h3>Mohamed Ashraf</h3>
+                <hr class="h">
+                <p>20201700668@cis.asu.edu.eg</p>
+                <br>
+                <p>Designed an admin page and contact us page</p>
+                
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="yasmin.jpg">
+                <h3>Yasmine Khaled</h3>
+                <hr class="h">
+                <p>20201701154@cis.asu.edu.eg</p>
+                <br>
+                <p>Did the local storage by jS <br> &#40;team leader&#41;</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="m as.jpg">
+                <h3>Merna Ashraf</h3>
+                <hr class="h">
+                <p>20201701209@cis.asu.edu.eg</p>
+                <br>
+                <p>Divided the page for series and movies</p>
+                
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="m ab.jpg">
+                <h3>Merna Abdallah</h3>
+                <hr class="h">
+                <p>20201700881@cis.asu.edu.eg</p>
+                <br>
+                <p>Designed a login page and register page</p>
+                
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <img src="soha.jpg">
+                <h3>Soha Mohamed</h3>
+                <hr class="h">
+                <p>20201700374@cis.asu.edu.eg</p>
+                <br>
+                <p>Designed the animation in movies and series</p>
+        
+            </div>
+        </div>
+    </div>
+    <script >
+      if(localStorage.getItem("body")==null){
+document.querySelector("body").style.backgroundImage;
+}
+else{
+document.querySelector("body").style.backgroundImage=("none"); 
+changeColor(localStorage.getItem("body"));}
+function changeColor(colorl){
+  
+document.querySelector("body").style.backgroundColor=colorl;
+}
+console.log("yasmine");
+
+
+  </script>
+    <script src="script.js"></script>
+</body>
+</html>

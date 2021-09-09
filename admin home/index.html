@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="master.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="for-bod" >
+        <div class="sidebar">
+            <div class="logo-details">
+            <!-- <i class='bx bx-shield-quarter icon'></i> -->
+            <img src="cinema.png" class="cin icon">
+            <div class="logo_name">HOMIES</div>
+            <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+            <li>
+              <i class='bx bx-search'></i>
+              <input type="text" placeholder="Search...">
+              <span class="tooltip">Search</span>
+            </li>
+            <li>
+              <a href="../admin home/index.html">
+                <i class='bx bx-home'></i>
+                <span class="links_name">Home</span>
+              </a>
+              <span class="tooltip">Home</span>
+            </li>
+            <li>
+              <a href="../admin movie/index.html">
+                <i class='bx bx-camera-movie'></i>
+                <span class="links_name">Movies</span>
+              </a>
+              <span class="tooltip">Movies</span>
+            </li>
+            <li>
+              <a href="../admin series/series.html">
+                <i class='bx bx-movie-play'></i>
+                <span class="links_name">Series</span>
+              </a>
+              <span class="tooltip">Series</span>
+            </li>
+            <li>
+              <a href="../admin page/index.html">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+              </a>
+              <span class="tooltip">Setting</span>
+            </li>
+        
+            <li>
+                <a href="../index.html">
+                        <i class='bx bx-log-out' id="log_out"></i>
+                        <span class="links_name">Log Out</span>
+                </a>
+                <span class="tooltip">Log Out</span>
+            </li>
+            </ul>
+            </div>
+        </header>
+        <div class="slider">
+            <ul class="ul">
+                <li class="lis1"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (1).jpeg" width="1500px" height="800px" ></li>
+                <li class="lis2"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (2).jpeg" width="1500px" height="800px"></li>
+                <li class="lis3"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (3).jpeg" width="1500px" height="800px"></li>
+                <li class="lis4"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (4).jpeg" width="1500px" height="800px"></li>
+                <li class="lis5"><img src="WhatsApp Image 2021-08-16 at 7.04.05 PM.jpeg" width="1500px" height="800px"></li>
+                <li class="lis6"><img src="the_shawshank_redemption_posterlarge_0-675188670.jpg" width="1500px" height="800px"></li>
+                <li class="lis7"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (7).jpeg" width="1500px" height="800px"></li>
+                <li class="lis8"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM (8).jpeg" width="1500px" height="800px"></li>
+                <li class="lis9"><img src="interstellar-movie-poster.jpg" width="1500px" height="800px"></li>
+                <li class="lis10"><img src="WhatsApp Image 2021-08-16 at 7.04.04 PM.jpeg" width="1500px" height="800px"></li>
+                <li class="lis11"><img src="WhatsApp Image 2021-08-16 at 7.04.05 PM (1).jpeg" width="1500px" height="800px   "></li>
+            </ul>
+        </div>
+        <footer class="for-footer">
+            <br>
+            <br>
+            <h1 class="for-h1">ABOUT US :</h1>
+            <p class="about-us-paragraph">
+                at the home page you will find the image slider with 11 different movies images with a navigation bar that contains menu , list of movies and list of series.at the movies page
+                you will find the available movies in our site and at the series page you will also find the available series in our site </e>
+        </footer>
+        <script >
+            if(localStorage.getItem("body")==null){
+    document.querySelector("body").style.backgroundImage;
+}
+else{
+    document.querySelector("body").style.backgroundImage=("none"); 
+changeColor(localStorage.getItem("body"));}
+function changeColor(colorl){
+        
+    document.querySelector("body").style.backgroundColor=colorl;
+ }
+console.log("yasmine");
+
+
+        </script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
